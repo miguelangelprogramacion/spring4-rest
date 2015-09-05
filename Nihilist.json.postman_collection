@@ -5,7 +5,9 @@
 	"order": [
 		"d4e54d06-f726-ab84-0eb6-45642d0482cf",
 		"db545a14-68ef-897a-8b4a-3b9ef8367b9a",
-		"6030ba09-8054-4f46-5762-6deb95043df5"
+		"6030ba09-8054-4f46-5762-6deb95043df5",
+		"1f4d95da-0848-682a-4053-72529ceea1b7",
+		"74ebb115-f530-ab57-acd6-f717a56e6d3e"
 	],
 	"folders": [],
 	"timestamp": 1441101923244,
@@ -13,6 +15,25 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "1f4d95da-0848-682a-4053-72529ceea1b7",
+			"headers": "Content-Type: application/json\nAuthorization: Basic dXNlcjpwYXNzd29yZA==\n",
+			"url": "http://localhost:8081/rest/secure",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1441492477237,
+			"name": "secure authorized",
+			"description": "",
+			"collectionId": "4691ff7b-7c43-fd13-1259-7ddece7076c0",
+			"responses": []
+		},
 		{
 			"id": "6030ba09-8054-4f46-5762-6deb95043df5",
 			"url": "http://localhost:8081/rest/nihilist",
@@ -29,7 +50,30 @@
 			"description": "",
 			"descriptionFormat": "html",
 			"collectionId": "4691ff7b-7c43-fd13-1259-7ddece7076c0",
+			"folder": null,
+			"folderId": null,
+			"timestamp": null,
 			"rawModeData": "{\n  \"nihilistId\": 1,\n  \"rage\": 50,\n  \"username\": \"Nihilist 1\",\n  \"concepts\": [\n    {\n      \"concept_Id\": null,\n      \"abstract_\": null,\n      \"good\": null,\n      \"resume\": null\n    }\n  ]\n}"
+		},
+		{
+			"id": "74ebb115-f530-ab57-acd6-f717a56e6d3e",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"url": "http://localhost:8081/rest/secure",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "4691ff7b-7c43-fd13-1259-7ddece7076c0",
+			"data": [],
+			"dataMode": "params",
+			"name": "secure unauthorized",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1441492445253,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
 		},
 		{
 			"id": "d4e54d06-f726-ab84-0eb6-45642d0482cf",
@@ -63,7 +107,10 @@
 			"name": "http://localhost:8081/rest/nihilist/1",
 			"description": "",
 			"descriptionFormat": "html",
-			"collectionId": "4691ff7b-7c43-fd13-1259-7ddece7076c0"
+			"collectionId": "4691ff7b-7c43-fd13-1259-7ddece7076c0",
+			"folder": null,
+			"folderId": null,
+			"timestamp": null
 		}
 	]
 }
