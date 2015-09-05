@@ -92,7 +92,6 @@ public class NihilistController {
 			return null;
 		else
 			return new Nihilist(id, 50, "Nihilist " + id, new ArrayList<Concept>(Arrays.asList(new Concept())));
-
 	}
 
 }
