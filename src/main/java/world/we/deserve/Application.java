@@ -38,7 +38,7 @@ public class Application extends WebSecurityConfigurerAdapter  {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/**/secure").
         authenticated().anyRequest().permitAll().
-        and().httpBasic().realmName("sunbather");
+        and().httpBasic();
     }
 
     @Autowired
