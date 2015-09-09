@@ -34,7 +34,7 @@ import world.we.deserve.exception.NihilistNotFoundException;
 public class NihilistController {
 
 	@RequestMapping(method = RequestMethod.GET)
-	public Nihilist nihilistByIdT() {
+	public Nihilist getSimpleNihilist() {
 		Nihilist nihilist = new Nihilist();
 		return nihilist;
 	}
